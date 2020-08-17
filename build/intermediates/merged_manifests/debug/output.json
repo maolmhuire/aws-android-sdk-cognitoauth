@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "com.amazonaws.mobileconnectors.cognitoauth",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 21701,
+        "versionName": "2.17.1",
+        "outputFile": "aws-android-sdk-cognitoauth-debug.aar",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "../../library_manifest/debug/AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.amazonaws.mobileconnectors.cognitoauth",
+        "split": ""
+      }
+    }
+  ]
+}
