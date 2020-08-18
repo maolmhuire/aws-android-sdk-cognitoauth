@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.1'
+    }
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 16 // androidx.browser
+        targetSdkVersion 29
+        versionCode 21701
+        versionName "2.17.1"
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    api ('com.amazonaws:aws-android-sdk-core:2.17.1') {
+        exclude group: 'com.google.android', module: 'android'
+    }
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'com.amazonaws:aws-android-sdk-cognitoidentityprovider-asf:1.0.0'
+}
+
